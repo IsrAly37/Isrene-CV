@@ -1,0 +1,114 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Fundo da página */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f5f2fa; /* lilás suave */
+}
+
+/* Formulário */
+.form-galeria {
+    background-color: #ffffff;
+    padding: 35px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+    width: 100%;
+    max-width: 420px;
+    transition: transform 0.3s;
+}
+
+.form-galeria:hover {
+    transform: translateY(-3px);
+}
+
+/* Título */
+.form-galeria h1 {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #5b3e96;
+    font-weight: 600;
+}
+
+/* Descrição */
+.form-galeria p {
+    text-align: center;
+    font-size: 1rem;
+    margin-bottom: 25px;
+    color: #7d6ca1;
+}
+
+/* Input com ícones */
+.input-group {
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.input-group .icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #b799f1;
+    font-size: 1rem;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px 12px 12px 40px;
+    border: 2px solid #dcd0ea;
+    border-radius: 12px;
+    font-size: 1rem;
+    transition: 0.3s;
+}
+
+.input-group input:focus {
+    border-color: #a98ede;
+    box-shadow: 0 0 8px rgba(169, 142, 222, 0.4);
+    outline: none;
+}
+
+/* Checkbox */
+.form-galeria .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    color: #5b3e96;
+}
+
+/* Botão */
+.form-galeria button {
+    width: 100%;
+    padding: 14px;
+    background: #b799f1;
+    color: #fff;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+.form-galeria button:hover {
+    background: #9f80e0;
+    transform: scale(1.03);
+}
+
+/* Responsividade */
+@media (max-width: 480px) {
+    .form-galeria {
+        padding: 25px 20px;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Acesso à Galeria</title>
+<link rel="stylesheet" href="formularioGaleria.css">
+</head>
+<body>
+
+<form id="formGaleria" class="form-galeria">
+    <h1>Acesso à Galeria</h1>
+    <p>Entre com os seus dados para explorar as obras da nossa galeria.</p>
+
+    <div class="input-group">
+        <input type="text" id="nome" name="nome" placeholder="Ex: Isrene Aly" required>
+    </div>
+
+    <div class="input-group">
+        <input type="email" id="email" name="email" placeholder="exemplo@email.com" required>
+    </div>
+
+    <div class="input-group">
+        <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+    </div>
+
+    <label class="checkbox">
+      <input type="checkbox" name="termos" required>
+      Confirmo que li e aceito os termos de acesso à galeria.
+    </label>
+
+    <button type="submit">Entrar</button>
+</form>
+
+<script>
+const form = document.getElementById('formGaleria');
+
+form.addEventListener('submit', function(e){
+    e.preventDefault(); 
+    localStorage.setItem('nome', document.getElementById('nome').value);
+    localStorage.setItem('email', document.getElementById('email').value);
+    localStorage.setItem('senha', document.getElementById('senha').value);
+
+    
+    window.location.href = 'Galeria.html';
+});
+</script>
+
+</body>
+</html>

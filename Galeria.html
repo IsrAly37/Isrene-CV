@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria Multimédia</title>
+    <link rel="stylesheet" href="galeria.css">
+</head>
+
+<body>
+
+ 
+<section class="perfil">
+    <h1>Meu Perfil</h1>
+    <figure class="foto-perfil">
+        <div class="aura"></div>
+        <a href="#perfilLightbox">
+            <img src="tpc.jpg" alt="Foto de Perfil" class="perfil-animada">
+        </a>
+    </figure>
+    <p>Bem-vindo(a) à minha galeria multimédia!</p>
+</section>
+
+
+<div id="perfilLightbox" class="lightbox">
+    <a href="#" class="close">&times;</a>
+    <img src="tpc.jpg" alt="Foto de Perfil">
+</div>
+
+
+   
+    <section class="galeria">
+        <h2>Galeria de Arte</h2>
+        <figure>
+            <a href="#img1"><img src="miudaDeFones.jpg" alt="Foto da galeria 1"></a>
+            <a href="#img2"><img src="arte.jpg" alt="Foto da galeria 2"></a>
+            <a href="#img3"><img src="mais arte.jpg" alt="Foto da galeria 3"></a>
+            <a href="#img4"><img src="patasDeGato.jpg" alt="Foto da galeria 4"></a>
+            <a href="#img5"><img src="autumn.jpg" alt="Foto da galeria 5"></a>
+            <a href="#img6"><img src="camera.jpg" alt="Foto da galeria 6"></a>
+        </figure>
+    </section>
+
+
+    <div id="img1" class="lightbox"><a href="#" class="close">&times;</a><img src="miudaDeFones.jpg"></div>
+    <div id="img2" class="lightbox"><a href="#" class="close">&times;</a><img src="arte.jpg"></div>
+    <div id="img3" class="lightbox"><a href="#" class="close">&times;</a><img src="mais arte.jpg"></div>
+    <div id="img4" class="lightbox"><a href="#" class="close">&times;</a><img src="patasDeGato.jpg"></div>
+    <div id="img5" class="lightbox"><a href="#" class="close">&times;</a><img src="autumn.jpg"></div>
+    <div id="img6" class="lightbox"><a href="#" class="close">&times;</a><img src="camera.jpg"></div>
+
+    <section class="musica">
+        <h2>Música</h2>
+        <p>A seguir, temos um ficheiro de áudio que contém a música da banda Chase Atlantic - Uncomfortable</p>
+        
+        <audio controls autoplay loop muted preload>
+            <source src="uncomfortable_mp3_50845.mp3" type="audio/mpeg">
+            O seu navegador não suporta áudio.
+        </audio>
+
+        <iframe data-testid="embed-iframe" style="border-radius:12px"
+            src="https://open.spotify.com/embed/track/4OmfWzukSVD140NiAIEjem?utm_source=generator" 
+            width="100%" height="352" frameBorder="0" 
+            allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy">
+        </iframe>
+    </section>
+
+    <section class="videos">
+        <h2>Vídeo</h2>
+        <p>Este vídeo mostra a dança da Enid e da Agnes na série Wednesday - Temporada 2</p>
+        
+        <div class="video-container">
+            <video controls>
+                <source src="Enid_Agnes.mp4" type="video/mp4">
+            </video>
+            
+            <iframe 
+                src="https://www.youtube.com/embed/uIS6H-JxOXE?si=e1yU7l7B-6EHcZbY" 
+                title="YouTube video player" 
+                frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                allowfullscreen>
+            </iframe>
+        </div>
+    </section>
+    
+
+</body>
+</html>
