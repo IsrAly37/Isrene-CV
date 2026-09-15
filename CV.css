@@ -44,8 +44,8 @@ body {
 
 .photo-wrap { display:flex; justify-content:center; }
 .photo{
-  width:100px;
-  height:100px;
+  width:200px;
+  height:200px;
   border-radius:6px; 
   object-fit:cover;
   border:6px solid rgba(255,255,255,0.12);
